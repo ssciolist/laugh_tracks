@@ -1,10 +1,10 @@
 require 'bundler'
 
+ENV["RACK_ENV"] ||= "test"
+
 Bundler.require(:default, :test)
 require File.expand_path('../../config/environment.rb', __FILE__)
 require 'capybara/dsl'
-
-ENV["RACK_ENV"] ||= "test"
 
 Capybara.app = LaughTracksApp
 Capybara.save_and_open_page_path = 'tmp/capybara'
