@@ -6,11 +6,10 @@
   </head>
   <body>
     <h1>Here's all the comedians ever</h1>
-    <ul>
-    <% all_comedians.each do |comedian| %>
-      <li><%= comedian.name %>, <%= comedian.age %></li>
-    <% end %>
-    </ul>
-
+    <div>
+      <% all_comedians.each do |comedian| %>
+      <p><%= comedian %>, <%= comedian.age %></p>
+      <% end %>
+    </div>
   </body>
 </html>
