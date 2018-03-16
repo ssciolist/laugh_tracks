@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Comedians</title>
+  </head>
+  <body>
+    <h1>Here's all the comedians ever</h1>
+    <ul>
+    <% all_comedians.each do |comedian| %>
+      <li><%= comedian.name %>, <%= comedian.age %></li>
+    <% end %>
+    </ul>
+
+  </body>
+</html>
